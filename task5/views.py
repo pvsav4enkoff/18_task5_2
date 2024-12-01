@@ -49,5 +49,5 @@ def sign_up_by_django(request):
         info = {'good': good, 'error': error}
         return render(request, 'fifth_task/registration_page.html', info)
     else:
-        form = UserRegistr(request.POST)
+        form = UserRegistr()
         return render(request, 'fifth_task/registration_page.html')
